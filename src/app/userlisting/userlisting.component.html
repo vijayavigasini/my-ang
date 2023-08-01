@@ -1,0 +1,69 @@
+<div>
+<mat-table [dataSource]="dataSource">
+    <!-- FirstNmae Definition -->
+    <ng-container matColumnDef="firstname">
+      <mat-header-cell *matHeaderCellDef> FirstName </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.firstname}} </mat-cell>
+    </ng-container>
+  
+    <!-- lastname Definition -->
+    <ng-container matColumnDef="lastname">
+      <mat-header-cell *matHeaderCellDef> LastName </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.lastname}} </mat-cell>
+    </ng-container>
+  
+    <!-- dob Definition -->
+    <ng-container matColumnDef="dob">
+      <mat-header-cell *matHeaderCellDef> D.O.B </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.dob}} </mat-cell>
+    </ng-container>
+
+    <!-- email Definition -->
+    <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.email}} </mat-cell>
+      </ng-container>
+
+      <!-- phoneNumber Definition -->
+    <ng-container matColumnDef="phonenumber">
+        <mat-header-cell *matHeaderCellDef> PhoneNumber </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.phonenumber}} </mat-cell>
+      </ng-container>
+
+      <!-- username Definition -->
+    <ng-container matColumnDef="username">
+        <mat-header-cell *matHeaderCellDef> UserName </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>
+      </ng-container>
+
+      <!-- password Definition -->
+    <ng-container matColumnDef="password">
+        <mat-header-cell *matHeaderCellDef> Password </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.password}} </mat-cell>
+      </ng-container>
+
+      <!-- role Definition -->
+    <ng-container matColumnDef="role">
+        <mat-header-cell *matHeaderCellDef> Role </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.role}} </mat-cell>
+      </ng-container>
+
+      <!-- Action Definition -->
+    <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+        <mat-cell *matCellDef="let row"> 
+        <a (click)= "UpdateUser(row.id)" mat-raised-button color="primary">Update</a>  
+        </mat-cell>
+      </ng-container>
+
+    
+
+  <!-- Header and Row Declarations -->
+    <mat-header-row *matHeaderRowDef="['firstname', 'lastname', 'dob', 'email','phonenumber','username','password','role','action']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['firstname', 'lastname', 'dob', 'email','phonenumber','username','password','role','action']"></mat-row>
+  </mat-table>
+<!-- <mat-paginator [pageSizeOption]= "[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic element">
+    
+</mat-paginator>  -->
+</div>
+  

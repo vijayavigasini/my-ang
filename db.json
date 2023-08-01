@@ -1,0 +1,48 @@
+{
+  "Posts": [
+    {
+      "firstname": "thomas",
+      "lastname": "thanapal",
+      "dob": "2023-07-04T18:30:00.000Z",
+      "email": "merlinthomas@gmail.com",
+      "phonenumber": "7708388465",
+      "username": "merlinthomas",
+      "password": "123456",
+      "role": "general",
+      "id": 1
+    },
+    {
+      "firstname": "vijaya",
+      "lastname": "vigasini",
+      "dob": "2023-07-18T18:30:00.000Z",
+      "email": "vigasini07@gmail.com",
+      "phonenumber": "9894292162",
+      "username": "vijayavigasini",
+      "password": "viji123",
+      "role": "general",
+      "id": 2
+    },
+    {
+      "firstname": "ramya",
+      "lastname": "devi",
+      "dob": "2023-07-19T18:30:00.000Z",
+      "email": "ramya06@gmail.com",
+      "phonenumber": "9876543210",
+      "username": "ramyadevi",
+      "password": "98765",
+      "role": "general",
+      "id": 3
+    },
+    {
+      "firstname": "Samyutha",
+      "lastname": "p",
+      "dob": "2023-07-21T18:30:00.000Z",
+      "email": "sam07@gmail.com",
+      "phonenumber": "6543210987",
+      "username": "samyutha",
+      "password": "0702",
+      "role": "admin",
+      "id": 4
+    }
+  ]
+}
